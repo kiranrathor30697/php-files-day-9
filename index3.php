@@ -31,11 +31,11 @@
 
                     echo'<br>';
 
-                   echo  $hash_password = hash('sha512',$password);
+                   //echo  $hash_password = hash('sha512',$password);
 
                    echo'<br>';
 
-                   echo  $hash_password = hash('sha512',$salt.$salt.$hash_password,$salt.$salt);
+                   echo  $hash_password = hash('sha512',$salt.$salt.$password.$salt.$salt);
 
                    // hashing algorithm with salt using then very compect password 
 
